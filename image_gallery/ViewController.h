@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *image_frame;
+@property int image_index;
+
+- (IBAction)image_index_increase:(id)sender;
+- (IBAction)image_index_decrease:(id)sender;
+- (IBAction)random_image_index:(id)sender;
 
 @end
 
