@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *image_frame;
 @property int image_index;
+@property (weak, nonatomic) IBOutlet UIPageControl *page_of_image;
 
 - (IBAction)image_index_increase:(id)sender;
 - (IBAction)image_index_decrease:(id)sender;

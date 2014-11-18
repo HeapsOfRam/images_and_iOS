@@ -49,12 +49,17 @@
                                     <action selector="random_image_index:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Dj-uL-Baz"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" id="lIR-KE-TaC">
+                                <rect key="frame" x="144" y="380" width="86" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="image_frame" destination="QI5-mS-Fa1" id="mPP-ba-LQV"/>
+                        <outlet property="page_of_image" destination="lIR-KE-TaC" id="vEW-or-fRZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
