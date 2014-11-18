@@ -16,43 +16,33 @@
                                 <rect key="frame" x="16" y="27" width="343" height="325"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zNd-1r-zxz">
-                                <rect key="frame" x="329" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="->">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="image_index_increase:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nSv-cO-xkz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="99x-kl-kEL">
-                                <rect key="frame" x="16" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="&lt;-">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="image_index_decrease:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u34-v0-Jc1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3oY-A3-xat">
-                                <rect key="frame" x="127" y="601" width="120" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Random">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="random_image_index:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Dj-uL-Baz"/>
-                                </connections>
-                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" id="lIR-KE-TaC">
                                 <rect key="frame" x="144" y="380" width="86" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="b8S-uI-eGr">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt;&lt;" id="oWD-zG-6jv">
+                                        <connections>
+                                            <action selector="image_index_decrease:" destination="vXZ-lx-hvc" id="a93-CV-v81"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="117" style="plain" systemItem="fixedSpace" id="pzN-5d-dKl"/>
+                                    <barButtonItem title="Random" id="9WR-TS-q3b">
+                                        <connections>
+                                            <action selector="random_image_index:" destination="vXZ-lx-hvc" id="oP5-1p-EQu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="117" style="plain" systemItem="fixedSpace" id="0Jx-a3-a4E"/>
+                                    <barButtonItem title=">>" id="HnY-0g-7t3">
+                                        <connections>
+                                            <action selector="image_index_increase:" destination="vXZ-lx-hvc" id="Gy7-LP-15g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
